@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////
+Basic Earley's Algorithm Parser
+Author: Paul Chase
+Modifications: Shlomo Argamon
+
+	This program may be run from the bin directory, and has two modes:
+	interactive and bash.
+
+	INTERACTIVE: java earleyParser <grammar>
+	BATCH: java earleyParser <grammar> <sentence_file>
+
+	Batch will output to command line, so pipe it to a file like so:
+	java earleyParser <grammer> <sentence_file> > parses.txt
+
+	Be sure to comment out the printTable command; this is only there as
+	an aide, final code should print actual parses only.
+	
+	The grammars are in the /grammars directory.
+
+	The implementation is a direct Earley parser, with some optimizations
+based on doing smaller checks to try and improve performance on small grammars.
+Basically I try to limit the number of times we need to search the entire
+grammar; speed improved threefold as a result, but it's still not that great;
+string compares are SLOW.  The main implementation is in the Grammar.java file,
+including all the functions required to parse a sentence.  I took out support
+for parsing sgml files; input instead one sentence per line, nonterminals
+separated by spaces.

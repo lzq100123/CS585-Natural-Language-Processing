@@ -1,0 +1,57 @@
+What sorts of sentences can it parse?
+
+she did drive to chicago
+Result:
+S[NP[FPRON[she]]VP[VBAR[FAUX[did]FV[drive]]VBAR-MODS[PP[FP[to]NP[FNAME[chicago]]]]]]
+
+i will give the jetcar to banzai
+Result:
+S[NP[FPRON[i]]VP[VBAR[VBAR[FAUX[will]FV[give]]NP[FD[the]NBAR[FN[jetcar]]]PP[FP[to]FNAME[banzai]]]]]
+S[NP[FPRON[i]]VP[VBAR[VBAR[FAUX[will]FV[give]]NP[FD[the]NBAR[FN[jetcar]]]]VBAR-MODS[PP[FP[to]FNAME[banzai]]]]]
+S[NP[FPRON[i]]VP[VBAR[VBAR[FAUX[will]FV[give]]NP[FD[the]NBAR[FN[jetcar]NBAR-MODS[PP[FP[to]NP[FNAME[banzai]]]]]]]]]
+
+will she give john jetcar
+Result:
+S[FAUX[will]NP[FPRON[she]]VP[VBAR[VBAR[FV[give]]NP[FNAME[john]]NP[NBAR[FN[jetcar]]]]]]
+
+i live in chicago
+Result:
+S[NP[FPRON[i]]VP[VBAR[FV[live]]VBAR-MODS[PP[FP[in]NP[FNAME[chicago]]]]]]
+
+it is a jetcar
+Result:
+S[NP[FPRON[it]]FIS[is]NP[FD[a]NBAR[FN[jetcar]]]]
+
+he is driving a jetcar to chicago
+Result:
+S[NP[FPRON[he]]VP[VBAR[VBAR[FAUX[is]FV[driving]]NP[FD[a]NBAR[FN[jetcar]]]]VBAR-MODS[PP[FP[to]NP[FNAME[chicago]]]]]]
+S[NP[FPRON[he]]VP[VBAR[VBAR[FAUX[is]FV[driving]]NP[FD[a]NBAR[FN[jetcar]NBAR-MODS[PP[FP[to]NP[FNAME[chicago]]]]]]]]]
+S[NP[FPRON[he]]VP[VBAR[VBAR[FAUX[is]FV[driving]]NP[FD[a]NBAR[FN[jetcar]]PP[FP[to]NP[FNAME[chicago]]]]]]]
+
+What types of sentences will it fail to parse?
+
+It fails to parse infinitives
+e.g.
+i drive to steal watermelon
+
+It fails to parse sentence with conjunctions since there is no conjunction in grammar
+e.g.
+i live and drive
+i drive john and banzai to chicago
+we live in earth and chicago
+
+It fails to parse prepositional phrase with determiner
+e.g. 
+i live in the chicago
+she did drive to the chicago
+i drive on the earth
+
+What improvements to the grammar or parser are required to properly parse common failed sentences?
+
+we could add new productions into grammar to parse common failed sentences, like adding conjunctions into grammar, adding infinitives to grammar
+e.g
+
+0	s	np cnj np
+0	cnj	and
+0	pp	fp vp
+0	pp	fp vp np

@@ -1,0 +1,83 @@
+<html><head><title>CS-481 Homework Assignment: Context-Free Parsing</title></head>
+<BODY>
+<H2>CS-585 &mdash; Natural Language Understanding</H2>
+<H1>Homework Assignment &mdash; Parsing CFGs</H1>
+<P>
+
+  This assignment may be done in pairs.
+
+  <P>
+
+You are to experiment with and enhance a simple Earley's Algorithm
+Parser using a small grammar ("simple.gr"), supplied in the attached
+ZIP file.  Such a parser and grammars are supplied (written in Java);
+if you prefer, you may write your own parser (make sure to document
+your code). Also provided is a sample of sentences parsed.  Please see
+the documentation files for details on code structure and running the
+parser.
+
+<ol>
+  <li> Evaluate the parser in its current form:
+    <ul>
+      <li> What sorts of sentences can it parse?
+      <li> What types of sentences will it fail to parse?
+      <li> What improvements to the grammar or parser are required to properly parse common failed sentences? 
+    </ul>
+
+  <li> Look at the grammar. What changes to the grammar alone could
+  improve the parsing (in particular, consider coordinated
+  conjunctions)?  Modify the grammar somewhat and evaluate the
+  improvements.  What new sentences may be parsed? What invalid
+  sentences are now parsed (if any)?
+
+  <li> Modify the code to output the parse tree(s) computed, rather
+  than just the dynamic programming table and whether the sentence
+  parses.  You will need to add appropriate back-links into the DP
+  table and write a routine to extract trees from the table.  Show the
+  tree(s) by printing the input sentence in a bracketed form, for
+  example:<BR>
+    <code>
+    S[ NP[ Det[ the ] N[ man ] ] VP[ V[ saw ] NP[ PN[ her ] ] ] ]
+    </code>
+
+    <LI> Modify the code to implement a version of probabilistic
+    parsing for the Earley algorithm using a similar method as that
+    discussed in class for the CYK algorithm. Each dotted rule will
+    have a probability (log-probability) that is the product (sum) of
+    the rule's probability (log-probability) with the probabilities
+    (log-probabilities) of all the completed children it covers so
+    far.  Test the system using a probabilized version of simple.gr
+    (see "prob-simple.gr"). Test the system on ambiguous sentences to
+    see if the highest probability parses are indeed the most
+    "reasonable" parses. Write a couple of ideas of how you might
+    improve the system yet further.
+
+</ol><br>
+<h2><b>Handing in:</b></h2>
+
+For the handing in, please submit the full system as given with the
+following additions: <ol>
+  <li> A file "evaluation.txt" all about part 1, your initial evaluation of the system.
+  <li> A file "grammarImprovements.txt" detailing the improvements you have made to the grammar, and what functionality has been added.
+  <li> A file "codeImprovements.txt" detailing the improvements you have made to the code itself for part 3 above.<br><br>
+  Format:<br><code>
+  Class.iAddedThis<br>
+  <b>param</b> p_input this is an input<br>
+  ...<br>
+  <b>returns</b> some stuff I needed<br>
+  This is a short but informative comment about why I added this function.<br>
+  <br>
+  For code modifications:<br>
+  Class.Method<br>
+  modified params...<br>
+  modified return...<br>
+  This is a short but informative comment about what I added and why.<br>
+  <br>
+  </code><br>
+  The end of the file contains the evaluation of improvements due to the above modifications, and a discussion of what other improvements could be made. <br>
+  <P>
+  
+  These files should be in the base parser directory alongside the
+  readme.txt and design.txt . Code must be commented as well!
+  </ol>
+</html>

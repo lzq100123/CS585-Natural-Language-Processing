@@ -1,0 +1,49 @@
+
+For code modifications:
+
+1.Producation.recursivePrint
+  modified params: passing a string array to this method, which contains three params: sentence size, parse result and probability
+  size is to track if the one possible parse result is done, parse result is to store the one possible result and probability is to 
+  caculate the probability of this parse result
+
+  modified return: return a string array to update each param when tracking back from bottom to top
+
+  This is an empty function which is used to be done by student. I implemented this funciton to print parse result
+
+2.Grammar.attach
+  modified params: add map param to track back pointer
+
+  modified return: no modification in return
+
+  This function is modified to add back link to each production
+
+3.Grammar.parse
+  modified params: no modification in param
+
+  modified return: modified return value to return a full parse.
+
+  The "return full parsed" part is used to be done by studnet. I implemented this function so recursivePrint could print parse recursively
+
+4.earleyParser.main
+  modified and added new code to get parse results and print the most reasonable result by comparing probability of each parse result 
+
+Evaluation:
+The program could print the parse tree of a sentence recursively after code modifications.
+
+Ambiguity sentences:
+1.he is driving a jetcar to chicago
+  Result:
+  S[NP[FPRON[he]]VP[VBAR[VBAR[FAUX[is]FV[driving]]NP[FD[a]NBAR[FN[jetcar]NBAR-MODS[PP[FP[to]NP[FNAME[chicago]]]]]]]]]
+
+2.i will give the jetcar to banzai
+  result:
+  S[NP[FPRON[i]]VP[VBAR[VBAR[FAUX[will]FV[give]]NP[FD[the]NBAR[FN[jetcar]NBAR-MODS[PP[FP[to]NP[FNAME[banzai]]]]]]]]]
+
+3.i will give the jetcar to banzai to steal watermelons
+  result:
+  S[NP[FPRON[i]]VP[VBAR[VBAR[FAUX[will]FV[give]]NP[FD[the]NBAR[FN[jetcar]NBAR-MODS[PP[FP[to]NP[FNAME[banzai]]]NBAR-MODS[PP[FP[to]VP[VBAR[VBAR[FV[steal]]NP[NBAR[FN[watermelons]]]]]]]]]]]]]
+
+4.i drive john and banzai to chicago
+  result:
+  S[NP[FPRON[i]]VP[VBAR[VBAR[FV[drive]]NP[NP[FNAME[john]]CNJ[and]NP[FNAME[banzai]]]]VBAR-MODS[PP[FP[to]NP[FNAME[chicago]]]]]]
+

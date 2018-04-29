@@ -1,0 +1,44 @@
+Improvements:
+
+0	np	np cnj np
+0	vp	vp cnj vp
+0	cnj	and
+0	pp	fp vp
+0	pp	fp vp np
+0	pp	fp fd np
+
+invalid sentences which could be parsed:
+
+1. Parser could parse infinitives
+
+i drive to steal watermelon
+Result:
+S[NP[FPRON[i]]VP[VBAR[FV[drive]]VBAR-MODS[PP[FP[to]VP[VBAR[VBAR[FV[steal]]NP[NBAR[FN[watermelon]]]]]NP[NBAR[FN[watermelon]]]]]]]
+
+2. Parser could parse sentence with conjunction
+
+i live and drive
+Result:
+S[NP[FPRON[i]]VP[VP[VBAR[FV[live]]]CNJ[and]VP[VBAR[FV[drive]]]]]
+
+i drive john and banzai to chicago
+Result:
+S[NP[FPRON[i]]VP[VBAR[VBAR[FV[drive]]NP[NP[FNAME[john]]CNJ[and]NP[FNAME[banzai]]]]VBAR-MODS[PP[FP[to]NP[FNAME[chicago]]]]]]
+
+we live in earth and chicago
+Result:
+S[NP[FPRON[we]]VP[VBAR[FV[live]]VBAR-MODS[PP[FP[in]NP[NP[FNAME[earth]]CNJ[and]NP[FNAME[chicago]]]]]]]
+
+3. Parser could parse prepositional phrase with determiner
+
+i live in the chicago
+Result:
+S[NP[FPRON[i]]VP[VBAR[FV[live]]VBAR-MODS[PP[FP[in]FD[the]NP[FNAME[chicago]]]]]]
+
+she did drive to the chicago
+Result:
+S[NP[FPRON[she]]VP[VBAR[FAUX[did]FV[drive]]VBAR-MODS[PP[FP[to]FD[the]NP[FNAME[chicago]]]]]]
+
+i drive on the earth
+Result:
+S[NP[FPRON[i]]VP[VBAR[FV[drive]]VBAR-MODS[PP[FP[on]FD[the]NP[FNAME[earth]]]]]]
