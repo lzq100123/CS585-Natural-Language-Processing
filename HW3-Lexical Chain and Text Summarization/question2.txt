@@ -1,0 +1,16 @@
+Result evaluation:
+
+The result is generated according to the four relationship between words in the chain and words which are going to add into the chain.
+The four relationship are synonym, antonym, hpernym and hyponym. We add a word to a chain if any one of these four relationships are satisfied.
+New chain will be created if there is no relationship satisfied or no synset for a word.
+
+There are some example result:
+Chain 3: beliefs(1), belief(1), view(1), suspicion(1), faith(1) 
+Chain 84: life(3), time(2), survival(1), period(1), days(2), lifetime(1), energy(1) 
+
+We can see words related to each other would be added into one lexical chain
+
+Enhancement:
+
+1. we could add more relationships to increase lexical chain length
+2. we could create chain with different synset to increase the corelation between two words

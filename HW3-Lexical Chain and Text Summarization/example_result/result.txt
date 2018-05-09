@@ -1,0 +1,282 @@
+Chain 1: week(1), period(2) 
+
+Chain 2: instances(1) 
+
+Chain 3: Department(1) 
+
+Chain 4: response(1), effect(2) 
+
+Chain 5: Project(1) 
+
+Chain 6: ¡°(1) 
+
+Chain 7: police(1) 
+
+Chain 8: characteristics(1) 
+
+Chain 9: robbery(2) 
+
+Chain 10: rates(11) 
+
+Chain 11: manufacturing(1) 
+
+Chain 12: Orange(2) 
+
+Chain 13: category(1) 
+
+Chain 14: day(1), today(2) 
+
+Chain 15: Places(1), area(1), home(1) 
+
+Chain 16: policy(1), argument(1) 
+
+Chain 17: Enforcement(1) 
+
+Chain 18: Adelman(1) 
+
+Chain 19: murders(1) 
+
+Chain 20: plans(1), pattern(2) 
+
+Chain 21: generations(1) 
+
+Chain 22: Miami(1) 
+
+Chain 23: robberies(1) 
+
+Chain 24: rape(1), assault(1) 
+
+Chain 25: hubs(1) 
+
+Chain 26: States(2), State(1), country(1), state(1), relationship(4), unemployment(1) 
+
+Chain 27: backgrounds(1) 
+
+Chain 28: immigrant-crime(1) 
+
+Chain 29: census(1) 
+
+Chain 30: Buffalo(1) 
+
+Chain 31: populations(3), population(6), people(1) 
+
+Chain 32: January(1) 
+
+Chain 33: York(2) 
+
+Chain 34: places(3) 
+
+Chain 35: Customs(1) 
+
+Chain 36: ¡±(2) 
+
+Chain 37: lawsuit(1), suit(1) 
+
+Chain 38: Ind.(1) 
+
+Chain 39: havens(1) 
+
+Chain 40: counts(1) 
+
+Chain 41: polls(1), research(1) 
+
+Chain 42: violent(5) 
+
+Chain 43: universities(1) 
+
+Chain 44: President(1) 
+
+Chain 45: F.B.I(1) 
+
+Chain 46: crime(25) 
+
+Chain 47: metropolises(1) 
+
+Chain 48: border(2) 
+
+Chain 49: conditions(1) 
+
+Chain 50: range(4) 
+
+Chain 51: researchers(2) 
+
+Chain 52: neighborhoods(1) 
+
+Chain 53: policies(1) 
+
+Chain 54: coincidence(1) 
+
+Chain 55: immigrants(9) 
+
+Chain 56: County(2), county(1) 
+
+Chain 57: rate(2) 
+
+Chain 58: dealers(1) 
+
+Chain 59: undercounts(1) 
+
+Chain 60: administration(2), direction(1) 
+
+Chain 61: analysis(2) 
+
+Chain 62: University(1) 
+
+Chain 63: Robert(1) 
+
+Chain 64: drug(1) 
+
+Chain 65: Areas(1) 
+
+Chain 66: travel(1), rise(3) 
+
+Chain 67: levels(1) 
+
+Chain 68: drives(1) 
+
+Chain 69: wall(1) 
+
+Chain 70: communities(3) 
+
+Chain 71: size(1), number(2) 
+
+Chain 72: month(1) 
+
+Chain 73: failing(1) 
+
+Chain 74: figures(1), person(1) 
+
+Chain 75: claims(1) 
+
+Chain 76: sociologist(1) 
+
+Chain 77: years(1) 
+
+Chain 78: half(1) 
+
+Chain 79: decreases(2), change(1) 
+
+Chain 80: California(2), Calif.(1) 
+
+Chain 81: assaults(1) 
+
+Chain 82: majority(3) 
+
+Chain 83: Justice(1) 
+
+Chain 84: data(5) 
+
+Chain 85: Crime(1) 
+
+Chain 86: support(1) 
+
+Chain 87: Muncie(1) 
+
+Chain 88: crimes(2) 
+
+Chain 89: grounds(1), connection(1) 
+
+Chain 90: s(4) 
+
+Chain 91: pockets(1) 
+
+Chain 92: cities(3) 
+
+Chain 93: Tuesday(1) 
+
+Chain 94: gang(1) 
+
+Chain 95: target(1) 
+
+Chain 96: studies(3), study(5), composition(1), survey(1) 
+
+Chain 97: officers(1) 
+
+Chain 98: numbers(1) 
+
+Chain 99: United(2) 
+
+Chain 100: drugs(1) 
+
+Chain 101: visas(1) 
+
+Chain 102: Mr.(1) 
+
+Chain 103: Mexico(1) 
+
+Chain 104: members(1) 
+
+Chain 105: Wheeling(1) 
+
+Chain 106: leaders(1) 
+
+Chain 107: traffickers(1) 
+
+Chain 108: Mass(1) 
+
+Chain 109: revitalization(1) 
+
+Chain 110: W.Va.(1) 
+
+Chain 111: average(2) 
+
+Chain 112: ¡¯(6) 
+
+Chain 113: Oakland(2) 
+
+Chain 114: percent(15) 
+
+Chain 115: Marshall(1) 
+
+Chain 116: collaboration(1) 
+
+Chain 117: restrictions(2) 
+
+Chain 118: immigration(10) 
+
+Chain 119: board(1) 
+
+Chain 120: components(1) 
+
+Chain 121: Immigration(1) 
+
+Chain 122: quarter(1) 
+
+Chain 123: risk(1) 
+
+Chain 124: year(1) 
+
+Chain 125: types(2) 
+
+Chain 126: total(1) 
+
+Chain 127: New(2) 
+
+Chain 128: decline(2) 
+
+Chain 129: worse(1) 
+
+Chain 130: ¡ª(1) 
+
+Chain 131: Gallup(1) 
+
+Chain 132: enforcement(1) 
+
+Chain 133: increases(4), growth(1) 
+
+Chain 134: decades(3), decade(1) 
+
+Chain 135: Trump(3) 
+
+Chain 136: murder(2) 
+
+Chain 137: America(2) 
+
+Chain 138: Americans(1) 
+
+Chain 139: areas(11) 
+
+Chain 140: centers(1) 
+
+Chain 141: Lawrence(2) 
+
